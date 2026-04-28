@@ -9,6 +9,7 @@ targets:
   crutils:
     main: src/crutils.cr
 
+  # Individual Binaries
   true:
     main: src/commands/true.cr
   
@@ -17,6 +18,9 @@ targets:
 
   cat:
     main: src/commands/cat.cr
+
+  echo:
+    main: src/commands/echo.cr
 
 crystal: '>= 1.19'
 

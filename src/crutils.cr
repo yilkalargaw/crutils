@@ -1,35 +1,25 @@
 require "./commands/*"
 
 module Crutils
+  COMMANDS = {
+    "true"  => True,
+    "false" => False,
+    "cat"   => Cat,
+    "echo"  => Echo,
+  }
+
   def self.main
     app_name = File.basename(PROGRAM_NAME)
     args = ARGV.dup
 
-    case app_name
-    when "true"
-      True.run(args)
-    when "false"
-      False.run(args)
-    when "cat"
-      Cat.run(args)
-    when "crutils"
-      if args.empty?
-        puts "Crutils multicall binary. Usage: [command] [args]"
-      else
-        subcommand = args.shift
-        execute_subcommand(subcommand, args)
-      end
-    else
-      abort "Unknown tool link: #{app_name}"
-    end
-  end
+    return puts("#{app_name} multicall binary. Usage: [command] [args]") if args.empty?
 
-  def self.execute_subcommand(cmd, args)
-    case cmd
-    when "true"  then True.run(args)
-    when "false" then False.run(args)
-    when "cat"  then Cat.run(args)
-    else abort "Unknown command: #{cmd}"
+    cmd = args.shift?
+    command = COMMANDS[cmd]?
+    if command
+      command.run(args)
+    else
+      abort("Unknown Command: #{cmd}")
     end
   end
 end
