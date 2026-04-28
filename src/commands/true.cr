@@ -6,4 +6,6 @@ module Crutils::True
 end
 
 # When using the above as a binary by itself
-Crutils::True.run(ARGV)
+if File.basename(PROGRAM_NAME) == "true"
+  Crutils::True.run(ARGV)
+end

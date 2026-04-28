@@ -20,4 +20,6 @@ module Crutils::Cat
 end
 
 # When calling the binary by itself
-Crutils::Cat.run(ARGV)
+if File.basename(PROGRAM_NAME) == "cat"
+  Crutils::Cat.run(ARGV)
+end
