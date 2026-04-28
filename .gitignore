@@ -1,0 +1,12 @@
+/docs/
+/lib/
+/bin/
+/.shards/
+*.dwarf
+*~
+\#*\#
+.\#*
+# projectiles files
+.projectile
+# directory configuration
+.dir-locals.el
