@@ -6,6 +6,7 @@ module Crutils
     "false" => False,
     "cat"   => Cat,
     "echo"  => Echo,
+    "pwd"   => Pwd
   }
 
   def self.main

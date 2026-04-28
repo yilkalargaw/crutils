@@ -22,6 +22,10 @@ targets:
   echo:
     main: src/commands/echo.cr
 
+  pwd:
+    main: src/commands/pwd.cr
+
+
 crystal: '>= 1.19'
 
 license: 0BSD
