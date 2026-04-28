@@ -1,0 +1,21 @@
+name: crutils
+version: 0.1.0
+
+authors:
+  - your-name-here <your-email-here>
+
+targets:
+  # The Multicall Binary (The "BusyBox" style)
+  crutils:
+    main: src/crutils.cr
+
+  true:
+    main: src/commands/true.cr
+  
+  false:
+    main: src/commands/false.cr
+
+crystal: '>= 1.19'
+
+license: 0BSD
+  
