@@ -2,7 +2,7 @@ name: crutils
 version: 0.1.0
 
 authors:
-  - your-name-here <your-email-here>
+  - Yilkal A.
 
 targets:
   # The Multicall Binary (The "BusyBox" style)
