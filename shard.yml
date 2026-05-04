@@ -25,6 +25,8 @@ targets:
   pwd:
     main: src/commands/pwd.cr
 
+  whoami:
+    main: src/commands/whoami.cr
 
 crystal: '>= 1.19'
 
