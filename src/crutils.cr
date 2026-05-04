@@ -7,7 +7,8 @@ module Crutils
     "cat"   => Cat,
     "echo"  => Echo,
     "pwd"   => Pwd,
-    "whoami"   => Whoami
+    "whoami" => Whoami,
+    "link"  => Link 
   }
 
   def self.main

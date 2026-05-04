@@ -28,6 +28,9 @@ targets:
   whoami:
     main: src/commands/whoami.cr
 
+  link:
+    main: src/commands/link.cr
+
 crystal: '>= 1.19'
 
 license: 0BSD
